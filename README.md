@@ -29,6 +29,7 @@ Deeper nested iterations, result in **Cubic Time** - **O(n3)**, **Quartic Time**
 Represent a highly efficient algorithms (example: binary search, quicksort, divide and conquer)
 Excecution time goes up linearly while the input data size grows exponentially 
 Logarithm is the inverse operation to exponention.
+
 <image src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/cb6dff7d-7901-46e6-b729-786009e801df/Screen_Shot_2022-02-07_at_12.49.22_PM.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45/20220312/us-west-2/s3/aws4_request&X-Amz-Date=20220312T165933Z&X-Amz-Expires=86400&X-Amz-Signature=df9968b496ea8a83af6e5179c5bc1559bfc0aab3f82f37cacd818202d0dd92eb&X-Amz-SignedHeaders=host&response-content-disposition=filename%20=%22Screen%2520Shot%25202022-02-07%2520at%252012.49.22%2520PM.png%22&x-id=GetObject" height="80" /> <image src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/06d7c693-168e-4270-94b0-bf060e3d692f/Screen_Shot_2022-02-07_at_12.51.26_PM.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45/20220312/us-west-2/s3/aws4_request&X-Amz-Date=20220312T165944Z&X-Amz-Expires=86400&X-Amz-Signature=a06bfbc787b685eab656efb33b072e7d53df74744281b68a06ed99ecbda65820&X-Amz-SignedHeaders=host&response-content-disposition=filename%20=%22Screen%2520Shot%25202022-02-07%2520at%252012.51.26%2520PM.png%22&x-id=GetObject" height="80" />
 
 ## Recursion
@@ -70,32 +71,42 @@ Most popular for its performance. Divide and conquer strategy: pick a pivot (eje
 
 **Selection sort**
 -   Start by finding the smallest item and placing it at the first place, next it finds the next smallest item and exchanges it with the second item, and goes on..
+
 <image src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/e5b35a8d-a553-440e-ae8d-2557f5cd88ab/Screen_Shot_2022-02-08_at_8.30.48_AM.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220312%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220312T170833Z&X-Amz-Expires=86400&X-Amz-Signature=b682525c39444a2a52f568930505eb878588a11ca855ae2a9623f6911f225084&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Screen%2520Shot%25202022-02-08%2520at%25208.30.48%2520AM.png%22&x-id=GetObject" height="380" />
+
 Easy to implement, use nested loops so it’s time complexity is quadratic, is inefficient.
 
 **Insertion Sort**
 -   Large items move to the right.
 -   Quadratic time complexity. The performance is largely affected by the initial order of the elements in the sequence
+
 <image src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/c0a8aac3-7c65-4e74-b670-d6195a273a6e/Screen_Shot_2022-02-08_at_8.40.34_AM.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220312%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220312T171040Z&X-Amz-Expires=86400&X-Amz-Signature=5338b66675e99b17424ddf3c95e560a34da3218a5311578e8a2770507b9613fc&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Screen%2520Shot%25202022-02-08%2520at%25208.40.34%2520AM.png%22&x-id=GetObject" height="230" />
+
 uses two nested loops, it’s worse time cimplexity is quadratic.
 
 Is much more performant than the selection sort if the input array includes already sorted sequences.
 -   already sorted input: performs in linear time
 -   input is shuffled or reverde ordered: quadratic time
+
 <image src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/76b332bb-238f-4ca8-887d-68074561ff8d/Screen_Shot_2022-02-08_at_8.48.19_AM.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220312%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220312T171238Z&X-Amz-Expires=86400&X-Amz-Signature=fc1b003f5dd36b648908b1ec2bd5a171cdec90f4c342a4b352419a5b8c3c1927&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Screen%2520Shot%25202022-02-08%2520at%25208.48.19%2520AM.png%22&x-id=GetObject" height="140"/>
+
 
 **Bubble Sort**
 Works by repeatedly evaluating adjacent items and swapping their positions if they are in the wrong order
+
 <image src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/93102337-7597-41b5-926c-331fc275d01b/Screen_Shot_2022-02-08_at_8.50.54_AM.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220312%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220312T171338Z&X-Amz-Expires=86400&X-Amz-Signature=a42cb8014e86c902b72e6cebb8601d30bf67956126b97d190da3372e4f42ad83&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Screen%2520Shot%25202022-02-08%2520at%25208.50.54%2520AM.png%22&x-id=GetObject" height="400"/>
 
 **Merge Sort**
 Works by splitting the sequence. Sub arrays are sorted and merged
 Additional sorting done while merging.
+
 <image src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/faf0fc07-8718-414d-8130-f0010dae64e5/Screen_Shot_2022-02-08_at_9.25.27_AM.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220312%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220312T171503Z&X-Amz-Expires=86400&X-Amz-Signature=2e9e8ab238789b325c10e82a54ae9a4b2214201ca579fafdae9d18a2a6befade&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Screen%2520Shot%25202022-02-08%2520at%25209.25.27%2520AM.png%22&x-id=GetObject" height="300"/>
 
 -   divide and conquer technique: splits the original array recyrsively into smaller sublists
 -   use for larger sequences / user insertion sort when input is small
+-   
 <image src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/8cdf7129-2d0a-4b8d-9c83-91ae972a241a/Screen_Shot_2022-02-08_at_9.31.31_AM.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220312%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220312T171550Z&X-Amz-Expires=86400&X-Amz-Signature=075e7a7a197680ec8999f5b20b6afbe4936af1afb71ec2df17bfc0ed2a1db3d3&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Screen%2520Shot%25202022-02-08%2520at%25209.31.31%2520AM.png%22&x-id=GetObject" height="235"/>
+
 <image src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/a7d82528-e829-4718-816d-cf49036a5f9e/Screen_Shot_2022-02-08_at_9.31.05_AM.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220312%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220312T171615Z&X-Amz-Expires=86400&X-Amz-Signature=0215272a19f91c43634cab61de538188c89581c19717267eba5c9ee5728d2ca8&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Screen%2520Shot%25202022-02-08%2520at%25209.31.05%2520AM.png%22&x-id=GetObject" height="521"/>
 
 **Quick Sort**
